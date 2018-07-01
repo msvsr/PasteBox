@@ -37,7 +37,7 @@ class SignupView(View):
         if form.is_valid():
             values=list(form.cleaned_data.values())
             try:
-                User.objects.create_user(username=values[0],password=values[2],email=values[1])
+                User.objects.create_user(username=values[0],password=values[1])
                 return redirect('pastebox:login')
             except IntegrityError:
                 return render(request, 'pastebox/signup.html', {'form': SignupForm, 'errors': 'User already exists!'})

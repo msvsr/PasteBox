@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47f55bf9-04c3-4c04-bcd9-42d0cf14834c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pastebox/forms.py" afterPath="$PROJECT_DIR$/pastebox/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pastebox/templates/pastebox/signup.html" afterPath="$PROJECT_DIR$/pastebox/templates/pastebox/signup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/settings.py" afterPath="$PROJECT_DIR$/projects/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pastebox/views.py" afterPath="$PROJECT_DIR$/pastebox/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,11 +46,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pastebox/templates/pastebox/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+            <state relative-caret-position="17">
+              <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pastebox/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="41" column="34" lean-forward="true" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -107,7 +116,6 @@
         <option value="$PROJECT_DIR$/pastebox/templates/pastebox/add_paste.html" />
         <option value="$PROJECT_DIR$/pastebox/urls.py" />
         <option value="$PROJECT_DIR$/pastebox/templates/pastebox/viewpastes.html" />
-        <option value="$PROJECT_DIR$/pastebox/views.py" />
         <option value="$PROJECT_DIR$/pastebox/templates/pastebox/login.html" />
         <option value="$PROJECT_DIR$/pastebox/templates/pastebox/about.html" />
         <option value="$PROJECT_DIR$/requirements.txt" />
@@ -115,6 +123,7 @@
         <option value="$PROJECT_DIR$/projects/settings.py" />
         <option value="$PROJECT_DIR$/pastebox/forms.py" />
         <option value="$PROJECT_DIR$/pastebox/templates/pastebox/signup.html" />
+        <option value="$PROJECT_DIR$/pastebox/views.py" />
       </list>
     </option>
   </component>
@@ -497,13 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pastebox/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="131" column="0" lean-forward="true" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pastebox/templates/pastebox/pastelist.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -598,8 +600,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pastebox/templates/pastebox/signup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+        <state relative-caret-position="17">
+          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastebox/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="41" column="34" lean-forward="true" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
           <folding />
         </state>
       </provider>
