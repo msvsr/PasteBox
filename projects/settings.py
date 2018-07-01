@@ -28,9 +28,9 @@ import os
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 #DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
-DEBUG=False
+DEBUG=True
 
-ALLOWED_HOSTS = ['localhost','pastebox.us-east-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['localhost','pastebox.us-east-2.elasticbeanstalk.com','127.0.0.1']
 
 
 # Application definition

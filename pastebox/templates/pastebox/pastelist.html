@@ -26,20 +26,33 @@ lists
             <th>Link</th>
             <th align="center" colspan="3" >Actions</th>
         </tr>
+
     {% for paste in pastes_list %}
         <tr>
             <td>{{paste.title}}</td>
             <td>{{paste.type}}</td>
             <td>{{paste.content|truncatechars:10 }}</td>
             <td>{{paste.expiryon}}</td>
-            <td>pastebox/{{paste.code}}</td>
-            <td title="show"><a href="/pastebox/show/{{paste.code}}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
-            <td title="edit"><a href="/pastebox/edit/{{paste.code}}"><span class="glyphicon glyphicon-pencil"></span></a></td>
-            <td title="delete"><a href="/pastebox/delete/{{paste.code}}"><span class="glyphicon glyphicon-trash"></span></a></td>
+            <td> <button  style="color:green" onclick="CopyLinkToClipBoard('http://pastebox.us-east-2.elasticbeanstalk.com/pastebox/{{paste.code}}')" ><i class="fa fa-clipboard"></i></button></td>
+            <td title="show" style="color:blue"><a href="/pastebox/show/{{paste.code}}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+            <td title="edit" style="color:#C410A9"><a href="/pastebox/edit/{{paste.code}}"><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td title="delete" style="color:red"><a href="/pastebox/delete/{{paste.code}}"><span class="glyphicon glyphicon-trash"></span></a></td>
         </tr>
     {% endfor %}
     </table>
 {% else %}
     <h1>No pastes to display</h1>
 {% endif %}
+<script>
+function CopyLinkToClipBoard(text) {
+var dummy = document.createElement("input");
+    document.body.appendChild(dummy);
+    dummy.setAttribute('value', text);
+    dummy.select();
+    document.execCommand("copy");
+    document.body.removeChild(dummy);
+    alert("Copied link to this paste to ClipBoard:\n"+text);
+}
+</script>
 {% endblock %}
+
