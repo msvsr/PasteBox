@@ -1,0 +1,22 @@
+{% extends 'pastebox/base.html' %}
+
+{% block titlecontent %}
+{{paste_object.title}}
+{% endblock %}
+
+{% block bodycontent %}
+
+<div class="well">
+<div align="center">
+    <h3>{{paste_object.title}}</h3> by <h3>{{paste_object.user}}</h3>
+    </div>
+    <h3>Content</h3>
+        <pre>
+        {{paste_object.content}}
+        </pre>
+    <div align="center">
+        <p><b>Expire On</b>: {{paste_object.expiryon}}</p>
+</div>
+    </div>
+
+{% endblock %}

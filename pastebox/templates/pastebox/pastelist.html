@@ -1,0 +1,45 @@
+{% extends 'pastebox/base.html' %}
+
+{% block titlecontent %}
+lists
+{% endblock %}
+
+{% block headercontent %}
+<li class="">
+    <a href="{% url 'pastebox:newpaste' %}">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp
+        New Paste
+    </a>
+</li>
+{% endblock %}
+
+{% block bodycontent %}
+
+{% if pastes_list %}
+<center><h1>Your Pastes</h1></center>
+    <table class="table table-hover" style="width:70%" align="center">
+        <tr class="info">
+            <th>Title</th>
+            <th>Type</th>
+            <th>Content</th>
+            <th>Expiryon</th>
+            <th>Link</th>
+            <th align="center" colspan="3" >Actions</th>
+        </tr>
+    {% for paste in pastes_list %}
+        <tr>
+            <td>{{paste.title}}</td>
+            <td>{{paste.type}}</td>
+            <td>{{paste.content|truncatechars:10 }}</td>
+            <td>{{paste.expiryon}}</td>
+            <td>pastebox/{{paste.code}}</td>
+            <td title="show"><a href="/pastebox/show/{{paste.code}}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+            <td title="edit"><a href="/pastebox/edit/{{paste.code}}"><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td title="delete"><a href="/pastebox/delete/{{paste.code}}"><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    {% endfor %}
+    </table>
+{% else %}
+    <h1>No pastes to display</h1>
+{% endif %}
+{% endblock %}

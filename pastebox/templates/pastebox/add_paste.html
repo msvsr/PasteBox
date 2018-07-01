@@ -1,0 +1,50 @@
+{% extends 'pastebox/base.html' %}
+
+{% block titlecontent %}
+{% if 'edit' in request.path %}
+        editpaste
+        {% else %}
+        newpaste
+        {% endif %}
+{% endblock %}
+
+
+{% block bodycontent %}
+
+    <center>
+        <h2>{% if 'edit' in request.path %}
+            Edit Paste
+            {% else %}
+            Create Paste
+        {% endif %}</h2>
+        <form method="post" name="editform">
+            {% csrf_token %}
+                <table cellspacing=5px cellpadding=5px>
+                    <tr>
+                        <td>Title</td>
+                        <td>{{form.title}}</td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td>{{form.type}}</td>
+                    </tr>
+                    <tr>
+                        <td>Content</td>
+                        <td>{{form.content}}</td>
+                    </tr>
+                    <tr>
+                        <td>Expiredate</td>
+                        <td>{{form.expiryon}}</td>
+                    </tr>
+                </table>
+
+
+            <input type="submit" class="btn btn-success" value="{% if 'edit' in request.path %}
+        Edit
+        {% else %}
+        Create
+        {% endif %}">
+        </form>
+    </center>
+
+{% endblock %}
