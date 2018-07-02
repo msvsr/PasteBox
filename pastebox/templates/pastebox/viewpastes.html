@@ -44,20 +44,13 @@
     </div>
     </div>
 </nav>
-    <!--<div class="w3-container">-->
-        <!--&lt;!&ndash;<nav class="navbar navbar-inverse">&ndash;&gt;-->
-        <!--<div class="w3-bar w3-light-grey w3-large">-->
-            <!--<a href="{% url 'pastebox:pastelists' %}" class="w3-bar-item w3-button w3-green"><i class="fa fa-home"></i></a>-->
-                        <!--<a href="{% url 'pastebox:logout' %}" class="w3-bar-item w3-button w3-red"><i class="fa fa-sign-out">Signout</i></a>-->
-        <!--</div>-->
-    <!--</div>-->
-        <!--&lt;!&ndash;</nav>&ndash;&gt;-->
 
     <div class="well">
+
 <div align="center">
     <h3>{{paste_object.title}}</h3> by <h3>{{paste_object.user}}</h3>
     </div>
-    <h3>Content</h3>
+        <h3>Content</h3>
         <pre>
         {{paste_object.content}}
         </pre>
