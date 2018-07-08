@@ -51,7 +51,7 @@ var dummy = document.createElement("input");
     dummy.select();
     document.execCommand("copy");
     document.body.removeChild(dummy);
-    alert("Copied link to this paste to ClipBoard:\n"+text);
+    alert("**Copied link to ClipBoard**\nLINK: "+text);
 }
 </script>
 {% endblock %}

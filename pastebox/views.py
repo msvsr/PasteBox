@@ -136,7 +136,8 @@ class ViewPaste(DetailView):
     template_name = "pastebox/viewpastes.html"
 
     def get_queryset(self):
-        return Pastes.objects.filter(code=self.kwargs['pk'])
+        paste=Pastes.objects.filter(code=self.kwargs['pk'])
+        return paste
 
 class AboutView(View):
     def get(self,request,*args,**kwargs):
