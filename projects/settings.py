@@ -39,6 +39,7 @@ ALLOWED_HOSTS = ['localhost','pastebox.us-east-2.elasticbeanstalk.com','127.0.0.
 # Application definition
 
 INSTALLED_APPS = [
+    'osqaapp.apps.OsqaappConfig',
     'pastebox.apps.PasteboxConfig',
     'django.contrib.admin',
     'django.contrib.auth',
