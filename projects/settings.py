@@ -29,7 +29,7 @@ import os
 # DEBUG = True
 #DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 if 'RDS_HOSTNAME' in os.environ:
-    DEBUG=False
+    DEBUG=True
 else:
     DEBUG=True
 
