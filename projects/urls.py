@@ -19,4 +19,5 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('pastebox/',include('pastebox.urls')),
+    path('osqa/', include('osqaapp.urls')),
 ]
