@@ -72,7 +72,7 @@ class DeleteQuestionView(LoginRequiredMixin,PermissionRequiredMixin,DeleteView):
         if (self.request.user.id == Question.objects.filter(id = self.kwargs.get('pk')).values_list('user')[0][0]):
             return True
         return False
-    success_url = '/osqa/userquestions'
+    success_url = '/osqa/userquestion'
 
 def QLikeCreate(request,pk):
     new_like,created = QLike.objects.get_or_create(user=request.user,question_id=pk)
